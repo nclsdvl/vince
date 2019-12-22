@@ -1,0 +1,40 @@
+.App{
+    background-color: black;
+    color: blanchedalmond;
+
+
+    .FirstPage {
+        display: flex;
+        //flex-direction: column;
+
+
+        height: 100vh;
+
+        .LeftImage {
+            background-color: darkorange;
+            height: 100%;
+            align-items: center;
+            width: 100vh;
+            img {
+                height: 350px;
+
+            }
+        }
+        .PresentationContainer{
+            text-align: center;
+            background-color: darkolivegreen;
+            width: 100vh;
+            height: 100%;
+
+            .Nom{
+                font-size: 32px;
+            }
+            .Titre{
+
+            }
+
+        }
+    }
+}
+
+

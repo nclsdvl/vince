@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.scss';
+import logo from './img/img.jpg'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HELLLLLLOOOOOOO <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="FirstPage">
+          <div className="LeftImage">
+            <img src={logo} alt='acceuil'></img>
+          </div>
+          <div className="PresentationContainer">
+            <div className="Nom">
+              <h1>Vince Mielcarek</h1>
+            </div>
+            <div className="Titre">
+              <h2>Professeur de musique</h2>
+            </div>
+            <div className="Coordonees">
+              <h3>Coordonnées :</h3>
+              <h3>45 rue de Pont-à-Mousson</h3>
+              <h3>57950 Montigny-lès-Metz</h3>
+              <h3>06 56 48 49 30</h3>
+              <h3>Vincent.Mielcarek@gmail.com</h3>      
+            </div>
+
+          </div>
+        </div>
     </div>
   );
 }
