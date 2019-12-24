@@ -8,7 +8,7 @@ function FirstPage() {
 
     let monImage = document.getElementsByTagName('img')
     let monTitre = document.getElementsByTagName('h2')
-    console.log(monImage)
+    let monAdresse = document.getElementsByClassName('Adresse')
 
 
     useEffect(() => {
@@ -32,6 +32,14 @@ function FirstPage() {
             rotation: 360,
             ease: 'power3',
         });
+
+        gsap.from(monAdresse, {
+            duration: 2,
+            y:500,
+            opacity: 0,
+            ease: 'powwer3',
+        });
+
 
     })
 
