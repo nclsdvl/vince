@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, span, applet, object, iframe,
+ h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// /* HTML5 display-role reset for older browsers */
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+// 	display: block;
+// }
+// body {
+// 	line-height: 1;
+// }
+// ol, ul {
+// 	list-style: none;
+// }
+// blockquote, q {
+// 	quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+// 	content: '';
+// 	content: none;
+// }
+// table {
+// 	border-collapse: collapse;
+// 	border-spacing: 0;
+// }
+
+
 @font-face {
     font-family: 'Prata';
     src: local('Prata'), url(../fonts/Prata-Regular.ttf) format('truetype');
@@ -43,10 +93,13 @@ $screen-xl-min: 1200px;
     }
  }
 
+ span{
+     display: inline-block;
+ }
 .App{
     background-color: black;
     color: #c8d3ff;
-    font-family: roboto;
+
 
     .FirstPage {
         font-family: Prata;
@@ -54,8 +107,8 @@ $screen-xl-min: 1200px;
         height: 100vh;
         background-color: #171618;
         overflow: hidden;
-        .LeftContainer {
 
+        .LeftContainer {
             display: none;
             flex-direction: column;
             justify-content: space-evenly;
@@ -67,9 +120,8 @@ $screen-xl-min: 1200px;
                 display: flex;
             }
 
-
             img {
-                filter: drop-shadow(0px 0px 91px #a0a0ff);
+                //filter: drop-shadow(0px 0px 91px #a0a0ff);
                 border-radius: 40%;
                 width: 50%;
                 height: 40%;
@@ -90,20 +142,23 @@ $screen-xl-min: 1200px;
                 filter: drop-shadow(4px 4px 1px #e1b6ff3d);
             }
             .Titre{
-                filter: drop-shadow(4px 4px 1px #e1b6ff3d);
+
             }
             .Coordonnees {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-filter: drop-shadow(0px 0px 91px #a0a0ff);
+                filter: drop-shadow(0px 0px 91px #a0a0ff);
+
                 .Adresse {
-                    box-shadow: 2px 2px 63px #7b74ce;
+                    box-shadow: 2px 2px 87px #7b74ce5e;
                     border-radius: 40px;
                     width: 40vh;
                     border: solid 1px whitesmoke;
                     font-size: 1.5vh;
-
+                }
+                .Adresse:nth-child(1) {
+                    font-family: roboto;
                 }
             }
 
