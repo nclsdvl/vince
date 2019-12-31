@@ -1,14 +1,12 @@
 import React, { Component, useRef, useEffect } from 'react'
-
 import gsap from 'gsap'
 
+// TODO à retravailler pour transformer le H1 en multiple span
 
 
 function Name() {
 
     let mesSpan = document.getElementsByTagName('span')
-
-
 
     useEffect(() => {
         gsap.from(mesSpan, {
@@ -24,11 +22,7 @@ function Name() {
         });
     })
 
-
-
-
     return (
-
         <div className="Nom" id="Nom">
             <h1>
                 <span>V</span>
@@ -50,11 +44,7 @@ function Name() {
                 <span>k</span>
             </h1>
         </div>
-
-
-
     )
-
 }
 
 export default Name;
