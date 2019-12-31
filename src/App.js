@@ -10,7 +10,7 @@ import NavBar from './components/NavBar.js'
 // TODO 
 //      -->compatibilité des navigateur (IE principalement)
 //      --> onResize parfois la page se retrouve entre deux scrolls
-//      --> placer des ancres et repositionner la page?
+//      --> placer des ancres et repositionner la page lors d'une actualisation?
 
 // replace à l'accueil lors de l'actualisation de la page
 window.addEventListener("load", function(event) {
