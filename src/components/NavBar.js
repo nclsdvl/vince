@@ -76,15 +76,15 @@ class NavBar extends Component {
             <div className={classes.root} id='root'>
                 <label className="container">
                     <input type="radio" name="radio" id='home' checked='true'></input>
-                    <span className="checkmark">Home</span>
+                    <span className="checkmark"></span>
                 </label>
                 <label className="container">
                     <input type="radio" name="radio" id='presentation'></input>
-                    <span className="checkmark">Presentation</span>
+                    <span className="checkmark"></span>
                 </label>
                 <label className="container">
                     <input type="radio" name="radio"></input>
-                    <span className="checkmark">Offre de cours</span>
+                    <span className="checkmark"></span>
                 </label>
 
 

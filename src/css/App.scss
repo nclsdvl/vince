@@ -97,12 +97,16 @@ $screen-xl-min: 1200px;
     overflow: hidden;
  }
 
+ label{
+    display: inherit;
+ }
+
  .container{
     input {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-      
+
         border-radius: 50%;
         width: 16px;
         height: 16px;
@@ -112,11 +116,11 @@ $screen-xl-min: 1200px;
         margin-right: 5px;
       
         position: relative;
-        top: 4px;
+        top: -5px;
       }
       
       input:checked {
-        border: 6px solid black;
+        border: 6px solid #c8d3ff;
       }
       
       button,
